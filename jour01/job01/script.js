@@ -1,6 +1,13 @@
+
 function myUpperCase(string) {
     return string.replace(/\s+/g, '').toUpperCase();
 }
 
-const result = myUpperCase("Hello World");
-console.log(result);  
+function testMyUpperCase() {
+    const inputString = document.getElementById('inputString').value;
+    const result = myUpperCase(inputString);
+    
+    document.getElementById('result').textContent = result;
+}
+
+console.log('Script JS chargé correctement');
