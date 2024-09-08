@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Ajouter un Etudiant</h1>
+    <form id="form-add-student" action="request.php" method="POST">
+        <label for="student-mail">Email:</label>
+        <input type="email" id="student-mail" placeholder="Ex. legauff@laplateforme.io" name="student-mail" required><br><br>
+        
+        <label for="student-fullname">Fullname:</label>
+        <input type="text" id="student-fullname" placeholder="Ex. Pierre Le Gauff" name="student-fullname" required><br><br>
+
+        <label for="student-gender">Gender:</label>
+        <select id="student-gender" name="student-gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="student-grade">Grade:</label>
+        <select id="student-grade" name="student-grade" required>
+            <option value="1">Grade 1</option>
+            <option value="2">Grade 2</option>
+            <option value="3">Grade 3</option>
+            <option value="4">Grade 4</option>
+            <option value="5">Grade 5</option>
+            <option value="6">Grade 6</option>
+            <option value="7">Grade 7</option>
+            <option value="8">Grade 8</option>
+            <option value="9">Grade 9</option>
+            <option value="10">Grade 10</option>
+            <option value="11">Grade 11</option>
+            <option value="12">Grade 12</option>
+        </select><br><br>
+
+        <label for="student-birthday">Birthdate:</label>
+        <input type="date" id="student-birthday" name="student-birthday" required><br><br>
+        
+        <input type="submit" id="submit-btn" value="Register Student" style="margin: 60px;">
+    </form>
+</body>
+</html>
